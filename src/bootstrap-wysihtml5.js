@@ -426,8 +426,14 @@
                 "wysiwyg-color-orange" : 1
             },
             tags: {
-                "b":  {},
-                "i":  {},
+                "b":  {
+                    "rename_tag": "strong"
+                },
+                "strong": {},
+                "i":  {
+                    "rename_tag": "em"
+                },
+                "em": {},
                 "br": {},
                 "ol": {},
                 "ul": {},
@@ -459,7 +465,12 @@
                 "div": 1,
                 // to allow save and edit files with code tag hacks
                 "code": 1,
-                "pre": 1
+                "pre": 1,
+                // ADDED
+                "p": {},
+                "cite": {},
+                "audio": {}
+                
             }
         },
         stylesheets: ["./lib/css/wysiwyg-color.css"], // (path_to_project/lib/css/wysiwyg-color.css)
