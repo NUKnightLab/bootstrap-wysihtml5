@@ -456,7 +456,8 @@
                 },
                 "a":  {
                     check_attributes: {
-                        'href': "url", // important to avoid XSS
+                        //'href': "url", // important to avoid XSS
+                        'href': 'href',
                         'target': 'alt',
                         'rel': 'alt'
                     }
